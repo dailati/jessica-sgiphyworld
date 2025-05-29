@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Jessica's Giphy World</title>
+
+    <!-- LINKS -->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/ace6924d-74f5-4fb9-a0e0-8ae1b561be8e/ChatGPT%20Image%20Apr%209%2C%202025%2C%2011_53_30%20PM.png?v=1744257213323"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="about.css" />
+
+    <!-- SCRIPTS -->
+    <script defer src="footer.js"></script>
+    <script defer src="navbar.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    ></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+
+    <!--     FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm p-2 text-white bg-opacity-100">
+      <div class="container-fluid">
+        <!-- SMALL MONITOR -->
+        <button
+          class="navbar-toggler navbar-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- NAVBAR FOR SMALL MONITOR -->
+        <div class="toggler-navbar" id="navbarSupportedContent">
+          <a href="index.html" class="text-center"> HOME </a>
+          <a href="gifs.html" class="text-center"> GIFS </a>
+          <a href="about.html" class="text-center"> ABOUT </a>
+        </div>
+
+        <!-- LOGO -->
+        <a href="index.html" class="navbar-logo">
+          <img
+            src="https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/Jessica's%20Giphy%20World.png?v=1744242645297"
+            alt="logo"
+        /></a>
+
+        <!-- START -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <!-- MAIN -->
+          <ul class="navbar-nav mb-lg-0">
+            <!-- HOME BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="index.html">HOME</a>
+            </li>
+            <!-- GIFS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="gifs.html">GIFS</a>
+            </li>
+            <!-- ABOUT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NAVBAR ICONS -->
+        <ul class="navbar-icons navbar-nav ms-auto mb-lg-0">
+          <!-- SEARCH -->
+          <button class="bi bi-person p-0 m-1" onclick="showSearch()">
+            <img
+              src="https://cdn.glitch.global/5c4ba8b9-3cae-4ee2-bf8b-99650138cb75/fi-xnsuhl-search.svg?v=1745275255127"
+              class="nav-search"
+            />
+          </button>
+                    <!-- FAVORITES -->
+          <svg viewbox="0 0 22 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="nav-icons nav-heart group-hover:scale-150 transition-transform m-auto [--stop-color-1:--giphy-white] [--stop-color-2:--giphy-white] group-hover:[--stop-color-1:--giphy-red] group-hover:[--stop-color-2:--giphy-pink]"><defs><lineargradient x1="0%" y1="10%" x2="0%" y2="90%" id="VIKa3CjZDCoymNcBY5-favorite"><stop id="gradient-stop-1" offset="0%" stop-color="var(--stop-color-1)"></stop><stop id="gradient-stop-2" offset="100%" stop-color="var(--stop-color-2)"></stop></lineargradient></defs><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M18.9307 11.9353L11.3231 19.8661C11.2015 19.9554 11.0906 20 10.9904 20C10.8545 20 10.7436 19.9554 10.6578 19.8661L3.05013 11.9353C2.1631 11.0132 1.46386 10.0707 0.952383 9.10764C0.440911 8.14463 0.136893 7.22997 0.0403214 6.36364C-0.0562504 5.4973 0.0206483 4.6756 0.271019 3.8985C0.521391 3.1214 0.939862 2.43168 1.52645 1.82934C2.28471 1.04108 3.17352 0.507532 4.19289 0.228668C5.21225 -0.0501953 6.23161 -0.0501953 7.25098 0.228668C8.27034 0.507532 9.15915 1.04108 9.91741 1.82934C10.3395 2.26808 10.6971 2.76259 10.9904 3.31288C11.2837 2.76259 11.6414 2.26808 12.0634 1.82934C12.8217 1.03365 13.7105 0.494518 14.7299 0.211936C15.7493 -0.0706455 16.7704 -0.0706455 17.7933 0.211936C18.8163 0.494518 19.7105 1.03365 20.4759 1.82934C21.2556 2.6399 21.7385 3.5843 21.9244 4.66258C22.1104 5.74085 21.9531 6.91578 21.4523 8.1874C20.9516 9.45901 20.1111 10.7083 18.9307 11.9353Z"></path></svg>
+
+          <!-- LOGIN -->
+          <a href="login.html" class="bi bi-person nav-icons">
+            <img
+              src="https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/person-fill.svg?v=1744233707396"
+            />
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- SEARCH BAR -->
+    <section id="searchBar">
+      <input
+        id="getThatCookie"
+        class="searchBar"
+        type="search"
+        placeholder="Search for Gifs!"
+      />
+    </section>
+
+    <!-- ABOUT PAGE CONTENT -->
+
+    <!--  HERO SECTION -->
+    <section class="hero">
+      <div class="hero-wrap">
+        <div class="wrapper-images">
+          <!-- 5 images by row -->
+          <div class="images-line">
+            <div
+              class="line"
+              style="
+                background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2cyZXFocHNjeWF0bXJxZmI1aDFkbGh5cWtzc3J3bm9hc2RndmFveiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BcPbK9ci4EU31qUTkR/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2cyZXFocHNjeWF0bXJxZmI1aDFkbGh5cWtzc3J3bm9hc2RndmFveiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BcPbK9ci4EU31qUTkR/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/26u4nJPf0JtQPdStq/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/26u4nJPf0JtQPdStq/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3o3a2VnZ2R2Nmg1d3JxajJ0a2dhZzR1bzlyc3F2YXphY29jYnE2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ky5hOOLX8tl6bYmQlS/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3o3a2VnZ2R2Nmg1d3JxajJ0a2dhZzR1bzlyc3F2YXphY29jYnE2NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ky5hOOLX8tl6bYmQlS/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/l0HlNaQ6gWfllcjDO/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/3o7qE1YN7aBOFPRw8E/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/3o7ZetIsjtbkgNE1I4/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/3o7ZetIsjtbkgNE1I4/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3M2NHhsMjRkcXNvMDhpeGpseTNheDdmaGJpN2dja21uZ215OTc4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4WxCRsi1eyyFNoPhnc/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3M2NHhsMjRkcXNvMDhpeGpseTNheDdmaGJpN2dja21uZ215OTc4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4WxCRsi1eyyFNoPhnc/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/xT5LMqkDsfZvJvOZsA/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/xT5LMqkDsfZvJvOZsA/giphy.gif);
+                "
+              ></div>
+            </div>
+          </div>
+          <!-- 5 images by row -->
+          <div class="images-line">
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/26tPo9rksWnfPo4HS/giphy.gif?cid=82a1493bz6jjgd6kz5nzpzpfb80636u1cvpsil8jk91byzwa&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/26tPo9rksWnfPo4HS/giphy.gif?cid=82a1493bz6jjgd6kz5nzpzpfb80636u1cvpsil8jk91byzwa&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/LqaQ6RKDb0wkBwOrgo/giphy.gif?cid=82a1493btigcrw9w2nan0nyr7ddyg6rae63459s0uabfycc4&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/LqaQ6RKDb0wkBwOrgo/giphy.gif?cid=82a1493btigcrw9w2nan0nyr7ddyg6rae63459s0uabfycc4&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/6oc5Eg5tglr9s7FQMp/giphy.gif?cid=82a1493bz6jjgd6kz5nzpzpfb80636u1cvpsil8jk91byzwa&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/6oc5Eg5tglr9s7FQMp/giphy.gif?cid=82a1493bz6jjgd6kz5nzpzpfb80636u1cvpsil8jk91byzwa&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif?cid=82a1493bfu23krmizuckqhgd6zcsb1w929w45z5x5go4q744&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/3NtY188QaxDdC/giphy.gif?cid=82a1493bfu23krmizuckqhgd6zcsb1w929w45z5x5go4q744&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/BDQmMy3ZM8sgRNFkhe/giphy.gif?cid=82a1493bnl9y8kvzorkanjtumozaxww2w7kv8nnxoz2g60h6&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/BDQmMy3ZM8sgRNFkhe/giphy.gif?cid=82a1493bnl9y8kvzorkanjtumozaxww2w7kv8nnxoz2g60h6&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/QWFKtdYD8ycCoLKzaI/giphy.gif?cid=82a1493b1bt4fo9kics85ysd8fq4me2tjv2es3kza5z5xipr&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/QWFKtdYD8ycCoLKzaI/giphy.gif?cid=82a1493b1bt4fo9kics85ysd8fq4me2tjv2es3kza5z5xipr&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHN2enQxazB0aXd3YnhpY2NqMHRnczgwZWdlc25iNGY4d3l0NGRyNCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/BPJmthQ3YRwD6QqcVD/giphy.gif);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHN2enQxazB0aXd3YnhpY2NqMHRnczgwZWdlc25iNGY4d3l0NGRyNCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/BPJmthQ3YRwD6QqcVD/giphy.gif);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/ely3apij36BJhoZ234/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/ely3apij36BJhoZ234/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/3oEjHI8WJv4x6UPDB6/giphy.gif?cid=82a1493b7zw75dfeqo1tgxkxqs3ttp0hmot44z8tggi4b82v&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/3oEjHI8WJv4x6UPDB6/giphy.gif?cid=82a1493b7zw75dfeqo1tgxkxqs3ttp0hmot44z8tggi4b82v&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+          </div>
+          <!-- 5 images by row -->
+          <div class="images-line">
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/f875muqA5nFhMtVHMm/giphy.gif?cid=82a1493bgxrye3sz6anm8qi0noykj09jo6o9bs6vodsxxfc0&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/f875muqA5nFhMtVHMm/giphy.gif?cid=82a1493bgxrye3sz6anm8qi0noykj09jo6o9bs6vodsxxfc0&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/r2BUOQEHvbaYFaCx8Q/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/r2BUOQEHvbaYFaCx8Q/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/7djNoTOCNebEOBLfnb/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/7djNoTOCNebEOBLfnb/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/g0dgv1yJiQxjac4Sl6/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/g0dgv1yJiQxjac4Sl6/giphy.gif?cid=82a1493b75578t069ng1uxxom7xkxps2prt04vwzuggdlsan&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/UO5elnTqo4vSg/giphy.gif?cid=82a1493bhozta4n17lo0wandgv3wtgeckgl6yry79c2evson&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/UO5elnTqo4vSg/giphy.gif?cid=82a1493bhozta4n17lo0wandgv3wtgeckgl6yry79c2evson&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/HoSyEAe48WBpTCmEz4/giphy.gif?cid=82a1493bspwq7k7aq0eoil2l81qqvq2upgzswpdq4c8e75d8&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/HoSyEAe48WBpTCmEz4/giphy.gif?cid=82a1493bspwq7k7aq0eoil2l81qqvq2upgzswpdq4c8e75d8&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/eHKxf2LKJ7TSGK6bzc/giphy.gif?cid=82a1493bz6jjgd6kz5nzpzpfb80636u1cvpsil8jk91byzwa&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/eHKxf2LKJ7TSGK6bzc/giphy.gif?cid=82a1493bz6jjgd6kz5nzpzpfb80636u1cvpsil8jk91byzwa&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/sdo7qKriWNQQKyQSpS/giphy.gif?cid=82a1493bqpm6vulo1vw20egk8on391hoyfwuoslqzsa8arv0&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/sdo7qKriWNQQKyQSpS/giphy.gif?cid=82a1493bqpm6vulo1vw20egk8on391hoyfwuoslqzsa8arv0&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+            <div
+              class="line"
+              style="
+                background-image: url(https://media.giphy.com/media/fUYhyT9IjftxrxJXcE/giphy.gif?cid=82a1493b9m5m7sz6ch4knk05uylh4djjvma0bycfbqf5sbub&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+              "
+            >
+              <div
+                class="img"
+                style="
+                  background-image: url(https://media.giphy.com/media/fUYhyT9IjftxrxJXcE/giphy.gif?cid=82a1493b9m5m7sz6ch4knk05uylh4djjvma0bycfbqf5sbub&ep=v1_gifs_trending&rid=giphy.gif&ct=g);
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="infront-of-imgs">
+          <h1 class="link-animation">ABOUT</h1>
+          <img
+            src="https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/thumbnails%2Fjustherhead%20(1).png?1746159870348"
+            class="link-animation headtext"
+          />
+          <h1 class="link-animation">JESSICA</h1>
+        </div>
+      </div>
+    </section>
+    <!--     HERO SECTION END -->
+
+    <!-- SCROLL -->
+    <section class="about-container">
+      <div class="about">
+        <div class="scrollwrapper">
+          <ul>
+            <li class="scroll">
+              <span class="titleitem"> ABOUT </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scroll">
+              <span class="titleitem"> ABOUT </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scroll">
+              <span class="titleitem"> ABOUT </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scroll">
+              <span class="titleitem"> ABOUT </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scroll">
+              <span class="titleitem"> ABOUT </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scroll">
+              <span class="titleitem"> ABOUT </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="container" style="--bs-gutter-x: 0">
+      <div class="d-flex flex-wrap justify-content-center align-items-center">
+        <div class="col-12 col-md-6 m-auto">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+            style="color: white"
+          >
+            <div class="profile">
+              <img
+                src="https://cdn.glitch.global/6b4205ae-aa5e-4151-9aa3-0308471122cb/jessicarealpicture.png?v=1745883154438"
+                alt="Person"
+                class="profile__image"
+              />
+              <p
+                class="profile__name"
+                style="font-size: 20px; letter-spacing: 1px;"
+              >
+                Jessica!
+              </p>
+              <div
+                class="grid-container d-flex align-items-center justify-content-center flex-column"
+              >
+                <div class="grid-child-posts">156 Post</div>
+                <div class="grid-child-followers">9000 Likes</div>
+              </div>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.tiktok.com/@jessicadagirl1000"
+                    ><i class="fi-snsuxl-tiktok-solid"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/jessicadagirl1000/"
+                    ><i class="fi-xnsuxl-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://x.com/jessicadag87971"
+                    ><i class="fi-xnsuxl-twitter-solid"></i
+                  ></a>
+                </li>
+              </ul>
+              <!--                   <button class="btn draw-border">Follow</button>
+                  <button class="btn draw-border">Message</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 m-auto">
+          <div class="purpose2 p-3">
+            <p class="m-0">
+              Jessica’s Giphy World was built for Jessica, a popular online
+              influencer known for her funny, relatable GIFs on Instagram and
+              Twitter. She needed a faster way to find and post GIFs without
+              constant scrolling. So, she asked us to create a custom site where
+              she can:
+              <li>Quickly search by mood or category</li>
+              <li>Easily browse and grab favorites</li>
+              <li>Save time making social media content</li>
+              Now, Jessica has a personal GIF hub to keep her creativity
+              flowing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--     PROFILE ENDS-->
+
+    <!-- SCROLL -->
+    <section class="about-container">
+      <div class="about">
+        <div class="scrollwrapper">
+          <ul>
+            <li class="scrollreverse">
+              <span class="titleitem"> GIFS </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scrollreverse">
+              <span class="titleitem"> GIFS </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scrollreverse">
+              <span class="titleitem"> GIFS </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scrollreverse">
+              <span class="titleitem"> GIFS </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scrollreverse">
+              <span class="titleitem"> GIFS </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+          <ul>
+            <li class="scrollreverse">
+              <span class="titleitem"> GIFS </span>
+              <img
+                class="titleimg"
+                src="https://cdn.glitch.global/9e63c2a0-04b1-4765-9f6c-ee61acaad280/playbuttongiphy.png?v=1744574007185"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--     FAVORITE GIFS START -->
+    <div class="about-text text-center">
+      <div>
+        <span class="purpose"> Jessica's Favorite GIFs! </span>
+      </div>
+
+      <div
+        class="favgifs d-flex flex-row flex-wrap justify-content-center m-auto"
+      >
+        <div class="col-md-1 card m-auto">
+          <a
+            href="https://giphy.com/gifs/animation-loop-visualtimmy-27UtynCENEhLgiAmik"
+          ></a>
+          <img
+            class="card-img-top"
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnZ3Ym05dGQ1NmFvaDhzMHpka3Jhaml3aHUzaGJkYjFoMHE2MWcyMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/27UtynCENEhLgiAmik/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a
+            href="https://giphy.com/gifs/OKX-good-morning-crypto-gm-nxixvW5krNTKLVOKDp"
+          ></a>
+          <img
+            class="card-img-top"
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdndzaDkyNXJlM2ZkMXlpbnV2bjRraDNsMnNvd3kwYzYwaHJwaWpyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nxixvW5krNTKLVOKDp/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a
+            href="https://giphy.com/gifs/bestfriends-kitten-high-five-good-job-GqYoA9i4myPpjhLaq3"
+          ></a>
+          <img
+            class="card-img-top"
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXVnOXZmbHh5OTdyenVyNzF5bW5xZTR4ZjdpY2twYTlxOXBjdjNkdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GqYoA9i4myPpjhLaq3/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a
+            href="https://giphy.com/gifs/fox-crying-cry-qSuGCpvIIMa3ymLxNx"
+          ></a>
+          <img
+            class="card-img-top"
+            src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTY0OWZoeWE4eTY2eWluamZ0dGV5czMxam4xeDl6bmNtaGNzYjlkZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qSuGCpvIIMa3ymLxNx/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a
+            href="https://giphy.com/gifs/duck-cuteness-baby-82nxC1u2BC8VU1wiZq"
+          ></a>
+          <img
+            class="card-img-top"
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWRjZGNubnA0czY4aTRjOHlqbG0wcmM3MW1nOHZnbjNjamNxYTMwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/82nxC1u2BC8VU1wiZq/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a href="https://giphy.com/gifs/pokemon-jpn-IRwnjCWf7RZ5KefVkJ"></a>
+          <img
+            class="card-img-top"
+            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExajRncGV1ZmNzcjNzaDB4amFybm9mZnMzbWdraTZkNDFwMzlscnBkOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IRwnjCWf7RZ5KefVkJ/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a href="https://giphy.com/gifs/Cdkk6wFFqisTe"></a>
+          <img
+            class="card-img-top"
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDd2bGI2NW84N3N6dzJxbnYxbW81cHR0Y2xtMW90eGw5b2U5OXB0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cdkk6wFFqisTe/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+        <div class="col-md-1 card m-auto">
+          <a
+            href="https://giphy.com/gifs/shakingfoodgifs-purple-shaking-food-gifs-x5EPlso6th5GU"
+          ></a>
+          <img
+            class="card-img-top"
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGlubHpxNjFyZmttdzNsbHc1azgzbjF0emZ1MmNmOGhzejhldzdjMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/x5EPlso6th5GU/giphy.gif"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <p>Click to learn more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--     FAVORITE GIFS END -->
+
+    <!--     FOOTER -->
+    <footer id="cs-footer-269">
+      <div class="cs-container">
+        <!-- Navigation -->
+        <div class="cs-nav">
+          <span class="cs-header">Navigation</span>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            
+            <li><a href="gifs.html">GIFS</a></li>
+
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="cs-social">
+          <span class="cs-header">Social Media</span>
+          <ul>
+            <li>
+              <a href="https://youtube.com/"
+                ><svg
+                  class="icon bi bi-youtube"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewbox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  /></svg
+                >YouTube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><svg
+                  class="icon bi bi-facebook"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewbox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  /></svg
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <svg
+                  class="icon-ig bi bi-instagram"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewbox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417a3.9 3.9 0 0 0 1.417.923c.51.198 1.09.332 1.942.372.853.038 1.125.048 3.297.048 2.172 0 2.444-.01 3.297-.048.852-.04 1.433-.174 1.942-.372a3.9 3.9 0 0 0 1.417-.923 3.9 3.9 0 0 0 .923-1.417c.198-.51.332-1.09.372-1.942.038-.853.048-1.125.048-3.297 0-2.174-.01-2.446-.048-3.3-.04-.852-.174-1.433-.372-1.942a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.09-.332-1.942-.372C10.444.01 10.172 0 8 0ZM8 1.449c2.135 0 2.389.008 3.232.046.78.036 1.204.166 1.486.276.374.145.64.32.918.598.278.278.453.544.598.918.11.282.24.706.276 1.486.038.843.046 1.097.046 3.232s-.008 2.389-.046 3.232c-.036.78-.166 1.204-.276 1.486a2.45 2.45 0 0 1-.598.918 2.45 2.45 0 0 1-.918.598c-.282.11-.706.24-1.486.276-.843.038-1.097.046-3.232.046s-2.389-.008-3.232-.046c-.78-.036-1.204-.166-1.486-.276a2.45 2.45 0 0 1-.918-.598 2.45 2.45 0 0 1-.598-.918c-.11-.282-.24-.706-.276-1.486-.038-.843-.046-1.097-.046-3.232s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486.145-.374.32-.64.598-.918.278-.278.544-.453.918-.598.282-.11.706-.24 1.486-.276.843-.038 1.097-.046 3.232-.046ZM8 3.89a4.11 4.11 0 1 0 0 8.22 4.11 4.11 0 0 0 0-8.22Zm0 6.772a2.662 2.662 0 1 1 0-5.324 2.662 2.662 0 0 1 0 5.324Zm5.2-6.934a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0Z"
+                  />
+                </svg>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="cs-contact">
+          <span class="cs-header">Contact Us</span>
+          <ul>
+            <li><a href="tel:555 420-1995">(555) 420-1995</a></li>
+            <li><a href="mailto:jessicadagirl1000@email.com">jessicadagirl1000@gmail.com</a></li>
+            <li><a href="#">123 Rainbow Loop, Glimmer City, CA 90210</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div class="cs-newsletter">
+        <h5>Subscribe to our newsletter</h5>
+        <form id="newsletter-form">
+          <input type="email" id="email-input" placeholder="Email address" />
+          <button
+            type="button"
+            id="subscribe-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </footer>
+    
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h4>Thanks for reaching out</h4>
+            <br />A member of our staff will contact you shortly!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap JS (for dropdowns, collapsible navbar) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--     CHATBOT -->
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "jNVQOV3n-WjJGaDUWmPFn";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+<!--     CHATBOT ENDS -->
+  </body>
+</html>

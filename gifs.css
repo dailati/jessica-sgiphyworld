@@ -1,0 +1,612 @@
+:root {
+  --api-width: min(70vw, 100vh);
+}
+
+.fredoka-<uniquifier > {
+  /* FONT */
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.gif-background {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  position: relative;
+  background-color: #000000;
+  z-index: 2;
+  transition: all 0.85s;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* top: 60px; */
+}
+
+.gif-search-div {
+  width: 100vw;
+  /*! top: calc(50vh - 100vw * .1 / 2); */
+  position: relative;
+  /*! aspect-ratio: 1/0.1 !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*! z-index: 0; */
+  height: calc(100vw * 0.1);
+  /*! top: 89px; */
+  align-content: unsafe;
+  align-self: center;
+}
+
+.gif-search-bar {
+  width: 45%;
+  height: 45%;
+  background-color: white;
+  display: inline-block;
+  border: none;
+  -webkit-border-radius: 0;
+  outline: none;
+  font-size: calc(20vw * 0.1);
+  /*   border-top-left-radius: 5% 50%;
+  border-bottom-left-radius: 5% 50%; */
+  text-indent: 5%;
+}
+
+.gif-search-bar:focus {
+  border: none;
+}
+
+.gif-search-img {
+  height: 45%;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  background-color: white;
+  /*   border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%; */
+}
+
+.absolute-holder {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+}
+
+
+/* DIANA WAIT */
+.side-section { 
+  width: calc(calc(100vw - var(--api-width)) / 2);
+  /*   display: flex;
+  align-items: flex-end; */
+}
+
+
+.side-section > i {
+  width: 2vw !important;
+  height: unset !important;
+  aspect-ratio: 1/1;
+  margin: 2vw;
+  cursor: pointer;
+  position: sticky;
+  bottom: 2vw;
+  z-index: 2;
+
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.spinimage {
+  position: absolute;
+  width: 200%;
+  animation: spin 15s linear infinite;
+  z-index: 2;
+  translate: -50% -50%;
+  top: calc(1vh + .82vh);
+  left: 1vw;
+  scale: 1.8;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.order-in-the-divs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  position: relative;
+  /* top: 160px; */
+  width: var(--api-width);
+}
+
+#wrapper {
+  width: 80vw;
+  max-width: 620px;
+  height: 70vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+#api-content {
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  justify-content: center;
+  background-color: #17202e;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  contain: content;
+  overflow-y: scroll;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gif-card {
+  width: calc(33.333% - 10px);
+  aspect-ratio: 1/1;
+  max-height: 40%;
+  contain: content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+}
+
+.gif-card > * {
+  pointer-events: none;
+}
+
+.gif-card > img {
+  width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1/1 !important;
+  transition: all 0.6s;
+  object-fit: cover;
+}
+
+#wrapper2 {
+  /*   width: 80vw;
+  max-width: 620px;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  top: 13vh; */
+}
+
+/* #api-content2 {
+  width: 400px;
+  height: 600px;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  gap: 10px;
+  padding: 10px;
+  & > * {
+    aspect-ratio: 1/1 !important;
+    background: none;
+  }
+} */
+.testimages {
+  height: 100px;
+  width: 100px;
+  transition: all 0.4s;
+}
+.gif-card2 {
+  width: calc(33.333% - 10px);
+  aspect-ratio: 1/1;
+  max-height: 40%;
+  contain: content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+}
+
+.gif-card > * {
+  pointer-events: none;
+}
+
+.gif-card2 > img {
+  width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1/1 !important;
+  transition: all 0.6s;
+  object-fit: cover;
+}
+
+/* NEW API DISPLAY */
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+.api-maintained {
+  width: 100vw;
+  height: fit-content;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-info {
+  position: absolute;
+  width: 27%;
+}
+
+#api-content3 {
+  width: 100%;
+  /*     background-color: aliceblue; */
+  background-color: black;
+  display: flex;
+  overflow-y: auto;
+  /* position: relative; */
+  gap: 4px;
+}
+
+.api-segments {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.api-segments > img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.api-segments > img:hover {
+  /*     scale: 1.1 */
+}
+
+.api-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.357);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.exit-out {
+  display: flex;
+  width: 2.5%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.exit-out:hover {
+  cursor: pointer;
+}
+
+.gif-container {
+  display: flex;
+  width: min(60%, 70vh);
+  align-items: center;
+  justify-content: center;
+  background: black;
+  aspect-ratio: 1/0.6;
+}
+
+.gif-img-holder {
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.4s;
+}
+.gif-img-holder > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hover-delete-opt {
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+
+.hover-delete-opt:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.overlay-left-section {
+  height: 100%;
+  /*! width: calc(50vh * .7); */
+  background-color: #2e2e38;
+  contain: content;
+  overflow-y: auto;
+
+  aspect-ratio: 0.6/1;
+}
+/* Σ(-᷅_-᷄๑) */
+.overlay2-left-section {
+  background: linear-gradient(to right, #4546dd, black);
+  transition: all 0.3s;
+}
+
+.overlay2-right-section {
+  background: linear-gradient(to left, #4546dd, black);
+  transition: all 0.3s;
+}
+
+.gif-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sub-profile-details {
+  display: flex;
+  height: 70px;
+  width: 100%;
+}
+.sub-profile-details > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  contain: content;
+  margin-left: 5px;
+  justify-content: center;
+}
+.sub-profile-details > img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.sub-profile-details > div > * {
+  margin: 0px;
+}
+
+.display-name {
+  font-size: 1vw;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bolder;
+}
+
+.username {
+  font-size: small;
+  color: grey;
+  transition: 0.3s ease;
+}
+
+.username:hover {
+  color: white;
+}
+
+.gif-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  contain: content;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+}
+
+.interactive-icons {
+  height: fit-content;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.interactive-icons > svg {
+  width: 24px;
+  margin: 0px !important;
+  cursor: pointer;
+}
+
+svg.download_svg {
+  filter: invert(100%);
+  transition: 0.3s ease;
+}
+
+svg.download_svg:hover {
+  filter: invert(60%);
+}
+
+svg.follow_svg {
+  filter: invert(100%);
+  transition: 0.3s ease;
+}
+svg.follow_svg:hover {
+  filter: invert(60%);
+}
+
+svg.copy_link {
+  filter: invert(100%);
+  transition: 0.3s ease;
+}
+svg.copy_link:hover {
+  filter: invert(60%);
+}
+
+/* END */
+
+.testimages {
+}
+
+.text-body {
+  display: flex;
+}
+
+.genre {
+  position: absolute;
+  height: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  top: calc(50% - 10px);
+  text-transform: uppercase;
+}
+
+#summoned-div-wrapper {
+  display: flex;
+
+  position: absolute;
+  background: #5e5e5e;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  contain: content;
+  left: 0px;
+}
+
+.img-thing {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+
+.img-thing > img {
+  object-fit: contain;
+}
+
+#summoned-div > .right-section {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  contain: content;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-section > .text-body {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  & > * {
+    color: aliceblue;
+  }
+}
+
+#name {
+  font-size: 20px;
+}
+
+#creator {
+  font-size: 14px;
+}
+
+.right-section > a {
+  height: 20%;
+  width: 85%;
+  contain: content;
+}
+
+/* .download-div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > p {
+    margin: 0; 
+    text-decoration: none;
+    color: white;
+    text-decoration-color: none;
+  }
+  
+} */
+
+#download-div {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 0.7%;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+}
+
+.acting-image {
+  aspect-ratio: 1/1;
+  height: 160px;
+  background-color: red;
+}
+
+
+/* TO BE DECIDED */
+
+.all-the-stuff {
+    width: var(--api-width);
+    height: calc(100vh - 60px);
+    left: calc(calc(100vw - var(--api-width)) / 2);
+    position: absolute;
+    top: 60px;
+  transition: all .4s;
+  overflow-y: scroll;
+}
+.extra-stuff {
+  background: black;
+  min-height: 30%;
+  display: flex;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  position: fixed;
+  
+}
+
+.protruding-section {
+  
+}
+.hidden-section {
+  
+}

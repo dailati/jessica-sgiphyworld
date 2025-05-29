@@ -1,0 +1,326 @@
+body {
+  background: black;
+  overflow-x: hidden !important;
+}
+
+.fredoka-<uniquifier > {
+  /* FONT */
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+header {
+  /* RESPONSIVE HEADER */
+  width: 100%;
+  height: 105vh;
+  overflow: hidden;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.85) 75%,
+      rgba(0, 0, 0, 1) 90%
+    ),
+    url("https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/space.jpg?v=1745878371202");
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  /*CUSTOME SIZE FOR IMAGES */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.scene {
+  /* ROTATING CUBE CONTAINER */
+  margin: auto;
+  width: 200px;
+  height: 200px;
+
+  transform-style: preserve-3d;
+  animation: spin 18s infinite linear;
+}
+.face {
+  /* GIF CONTAINER */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #24252b;
+  overflow: hidden;
+}
+
+.face img {
+  /* GIF */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.front {
+  /* POSITION OF EACH FACE */
+  transform: rotateY(0deg) translateZ(100px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes spin {
+  /* ANIMATION OF ROTATING CUBE */
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.gifs-display {
+  /* CAROUSEL IN PURPOSE SECTION */
+  width: 400px;
+  height: 600px;
+  background: url("https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/realisticsmartphone.png?v=1744667577883");
+  background-size: cover;
+  display: flex;
+  background-position: center;
+}
+
+.comment-style {
+  /* PURPOSE SECTION */
+  width: auto;
+  height: 100%;
+
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+
+  padding: 1rem;
+  border: 2px solid #4546dd;
+  border-radius: 0.9rem;
+
+  color: #f5f5f5;
+  background-color: black;
+}
+.comment-img {
+  /* IMAGE ON TOP OF COMMMENT/PURPOSE SECTION */
+  display: block;
+  margin: auto;
+  max-width: 200px;
+}
+
+.signup-now {
+  /* SIGNUP NOW */
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #4546dd 0%,
+    #5b5cbc 25%,
+    #6a6bfa 50%,
+    #4546dd 75%,
+    #2e2faf 100%
+  );
+  background-position: center;
+  background-size: cover;
+}
+.signup-now-img {
+  height: 80px;
+  width: 80px;
+  background: url("https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/playbuttongiphy.png?v=1744573759116");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none !important;
+  }
+}
+span {
+  color: #a39edb;
+}
+
+.card-text {
+  color: #f5f5f5;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}
+.btn-secondary {
+  padding: 10px;
+  margin-left: 4px;
+  border-radius: 1rem;
+  border: 0.2px solid black;
+  background: #2e2e38;
+  color: #f5f5f5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background: #a39edb;
+  transition: all 0.3s ease;
+  color: #2e2faf;
+}
+/* ABOUT/GIFS SECTION */
+.about-gifs-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+/* SPECIFIC BACKGROUNDS */
+.about-card {
+  background: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzNwbnc4eDFzenNrbXFudTZoOTZhdm0weHUyNW12ejl1enVxOGwzYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JidwhuCLt3u5sXimzc/giphy.gif");
+}
+.gifs-card {
+  background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTRnNnFudzBqbTJ2cjk1dGs1bGp2cnpmZWtiODFlMjAyNjVkY3dzZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l5JbspfwZ0yjHjlJ0K/giphy.gif");
+}
+
+.about-card,
+.gifs-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  border: 3px solid #4546dd;
+
+  margin: 10px;
+  padding: 15px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* CARD ANIMATION */
+.card-animation {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+.card-animation.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card-animation.show:hover {
+  transform: scale(1.05)
+}
+
+/* CARD TITLE */
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+}
+.card-title a {
+  font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fce4ec;
+  pointer-events: all;
+}
+.card-title a:hover {
+  color: #a39edb;
+  transition: 0.3s ease;
+}
+
+/* LOADING */
+.loading-div {
+  width: 100vw;
+  top: -20vh;
+  height: 120vh;
+  position: absolute;
+  /* overflow: hidden; */
+  z-index: 999999999999999;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.9s cubic-bezier(1, -0.26, 0.7, 0.99);
+  /* transition: all .9s cubic-bezier(1,-0.1,.5,1); */
+}
+.loading-div-image {
+  height: 20vh;
+  /* background-color: red; */
+  opacity: 0;
+  aspect-ratio: 1/1;
+  position: absolute;
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: all 0.5s cubic-bezier(0, 1.02, 0.2, 1.57);
+  background-image: url("https://cdn.glitch.global/5bc91e3e-6ff2-41a1-8693-14aa8f6fdb42/Jessica's%20Giphy%20World.png?v=1744242645297");
+  background-size: contain;
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+/* GIFS ON PHONE */
+
+.phone-gif {
+  display: block;
+  margin: 10px auto;
+  position: relative;
+}
+
+#api-content2 {
+  overflow: hidden;
+  position: relative;
+  width: 62%;
+  height: 72%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 10px;
+  padding: 10px;
+  contain: content;
+  & > * {
+    background: none;
+  }
+  background: white;
+}
+
+#api-content2 > img {
+  /*phone-gifs*/
+  top: 0px;
+  width: 100%;
+  height: fit-content;
+  transition: all linear 90s;
+  position: relative;
+}
