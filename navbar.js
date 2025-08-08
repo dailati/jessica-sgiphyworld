@@ -5,10 +5,7 @@ function showSearch() {
   searchBar.classList.toggle("show");
 }
 let yes = true;
-// WHO LIKE THAT COOKIE WHO LIKE THAT COOKIEEE IIII LIKE THAT COOOKIEEEEEE IIIIIII LIKE THAT COOKIEEEEEEE
-// mMamAh May I have cookie???
-// Noo dIABETO, roll back to kitchen >:() KLJSFHLSHFLHASLFHJASFHKA
-// Well.. fuck I'm stuck on words dw take ur time im watching invincible getting that cookie bro..
+
 if (getThatCookie == null) {
   
 } else {
@@ -120,4 +117,5 @@ document.querySelector('.nav-heart').addEventListener('click', function() {
   new_div.style.left = `calc(${document.querySelector('.nav-heart').getBoundingClientRect().left - (75) + (document.querySelector('.nav-heart').clientHeight/2)}px - .5%)`
   document.body.append(new_div)
   
+
 })
